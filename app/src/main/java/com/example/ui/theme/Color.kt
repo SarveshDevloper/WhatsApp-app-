@@ -1,0 +1,30 @@
+package com.example.ui.theme
+
+import androidx.compose.ui.graphics.Color
+
+// Authentic WhatsApp Brand Colors
+val WhatsAppGreenPrimary = Color(0xFF008069)
+val WhatsAppGreenDark = Color(0xFF075E54)
+val WhatsAppGreenLight = Color(0xFF25D366)
+val WhatsAppTeal = Color(0xFF128C7E)
+val WhatsAppLightGreenBubble = Color(0xFFE7FFDB)
+val WhatsAppDarkGreenBubble = Color(0xFF005D4B)
+val WhatsAppIncomingBubbleLight = Color(0xFFFFFFFF)
+val WhatsAppIncomingBubbleDark = Color(0xFF202C33)
+val WhatsAppChatBackgroundLight = Color(0xFFEFEAE2)
+val WhatsAppChatBackgroundDark = Color(0xFF0B141A)
+val WhatsAppBlueTick = Color(0xFF53BDEB)
+val WhatsAppGreyTick = Color(0xFF8696A0)
+val WhatsAppDarkSurface = Color(0xFF111B21)
+val WhatsAppDarkCard = Color(0xFF1F2C34)
+val WhatsAppLightSurface = Color(0xFFFFFFFF)
+val WhatsAppLightBackground = Color(0xFFFFFFFF)
+val WhatsAppTextPrimaryLight = Color(0xFF111B21)
+val WhatsAppTextSecondaryLight = Color(0xFF667781)
+val WhatsAppTextPrimaryDark = Color(0xFFE9EDEF)
+val WhatsAppTextSecondaryDark = Color(0xFF8696A0)
+val WhatsAppFloatingActionButton = Color(0xFF25D366)
+val WhatsAppDividerLight = Color(0xFFE9EDEF)
+val WhatsAppDividerDark = Color(0xFF222D34)
+val WhatsAppStatusUnseen = Color(0xFF25D366)
+val WhatsAppStatusSeen = Color(0xFF8696A0)

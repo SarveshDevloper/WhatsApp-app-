@@ -1,0 +1,66 @@
+{
+  "$schema": "https://raw.githubusercontent.com/firebase/firebase-tools/master/schema/firestore-blueprint.json",
+  "entities": {
+    "User": {
+      "collection": "users",
+      "path": "users/{userId}",
+      "fields": {
+        "userId": { "type": "string" },
+        "phoneNumber": { "type": "string" },
+        "countryCode": { "type": "string" },
+        "displayName": { "type": "string" },
+        "aboutStatus": { "type": "string" },
+        "googleEmail": { "type": "string" },
+        "avatarColorHex": { "type": "number" },
+        "avatarInitials": { "type": "string" },
+        "createdAt": { "type": "timestamp" },
+        "updatedAt": { "type": "timestamp" }
+      },
+      "rules": {
+        "read": "request.auth != null && request.auth.uid == userId",
+        "write": "request.auth != null && request.auth.uid == userId"
+      }
+    },
+    "Chat": {
+      "collection": "chats",
+      "path": "users/{userId}/chats/{chatId}",
+      "fields": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "phoneNumber": { "type": "string" },
+        "lastMessageText": { "type": "string" },
+        "lastMessageTime": { "type": "string" },
+        "unreadCount": { "type": "number" },
+        "isGroup": { "type": "boolean" },
+        "isBroadcast": { "type": "boolean" },
+        "avatarColorHex": { "type": "number" },
+        "avatarInitials": { "type": "string" },
+        "updatedAt": { "type": "timestamp" }
+      },
+      "rules": {
+        "read": "request.auth != null && request.auth.uid == userId",
+        "write": "request.auth != null && request.auth.uid == userId"
+      }
+    },
+    "Message": {
+      "collection": "messages",
+      "path": "users/{userId}/chats/{chatId}/messages/{messageId}",
+      "fields": {
+        "id": { "type": "string" },
+        "chatId": { "type": "string" },
+        "senderId": { "type": "string" },
+        "senderName": { "type": "string" },
+        "text": { "type": "string" },
+        "formattedTime": { "type": "string" },
+        "isOutgoing": { "type": "boolean" },
+        "isEncrypted": { "type": "boolean" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "timestamp" }
+      },
+      "rules": {
+        "read": "request.auth != null && request.auth.uid == userId",
+        "write": "request.auth != null && request.auth.uid == userId"
+      }
+    }
+  }
+}

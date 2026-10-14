@@ -1,0 +1,6 @@
+{
+  "name": "WhatsApp",
+  "description": "WhatsApp messenger with end-to-end encrypted chats, voice and video calls, 24-hour status updates, groups, broadcast lists, and secure phone and Google sign-in.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

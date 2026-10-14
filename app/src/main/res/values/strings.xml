@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WhatsApp</string>
+    <string name="title_chats">Chats</string>
+    <string name="title_updates">Updates</string>
+    <string name="title_communities">Communities</string>
+    <string name="title_calls">Calls</string>
+    <string name="title_status">Status</string>
+    <string name="title_settings">Settings</string>
+    <string name="default_web_client_id" translatable="false">484454830874-5q1ffhfk9079e65q7bn80jhpmbt7hlvt.apps.googleusercontent.com</string>
+    <string name="e2e_encryption_notice">Messages and calls are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them. Tap to learn more.</string>
+</resources>

@@ -1,0 +1,8 @@
+{
+  "firestore": [
+    {
+      "database": "ai-studio-android-whatsapp-1e10767c-edd3-4e63-88fb-b191cca03464",
+      "rules": "firestore.rules"
+    }
+  ]
+}
